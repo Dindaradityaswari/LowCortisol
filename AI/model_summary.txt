@@ -1,0 +1,22 @@
+BURNOUT PREDICTION MODEL - SUMMARY REPORT
+==========================================
+
+DATASET SPLIT:
+- Training set: 8800 samples (balanced via SMOTE)
+- Validation set: 2200 samples (balanced)
+- Independent test set: 2614 samples (imbalanced)
+
+MODEL PERFORMANCE:
+- Validation Accuracy: 0.5455 (54.55%)
+- Independent Test Accuracy: 0.9847 (98.47%)
+- Difference: 0.4392 (43.92%)
+
+VERDICT:
+Model accuracy on UNSEEN data: 98.47%
+Overfitting indicator: 43.92% gap
+
+FILES GENERATED:
+1. burnout_model.keras - Trained model
+2. encoders.pkl - Label encoders for categorical features
+3. scaler.pkl - StandardScaler for feature scaling
+4. independent_test_predictions.csv - Detailed predictions on 100 test samples
